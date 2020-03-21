@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-error-shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  color: #d91e18 !important;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#input-password {
+  width: 320px;
+  background: #64ac8f;
+  border: none;
+  border-bottom: 4px solid #4b6154;
+  font-size: 20px;
+  padding-left: 6px;
+  color: #e7f5dc;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 440px;
+  height: 50px;
+  margin: auto;
+  margin-top: 250px;
+}
+
+.button-start {
+  width: 100px;
+  background: #64ac8f;
+  border: none;
+  border-bottom: 4px solid #4b6154;
+  color: #e7f5dc;
+  font-size: 25px;
+}
+
+.button-start:hover {
+  background: #4b6154;
+}
+
+.button-start:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  color: white;
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
